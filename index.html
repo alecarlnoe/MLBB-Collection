@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>MLBB Collection</h1>
+            <p>Explora, colecciona e intercambia</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu-principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#heroes">Héroes</a>
+            <a href="#skins">Skins</a>
+            <a href="#intercambios">Intercambios</a>
+            <a href="#galeria">Galería</a>
+        </div>
+    
+        <div class="menu-secundario">
+            <a href="historia.html">Historia</a>
+            <a href="informacion.html">Información</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    
+
+
+    <main>
+
+        <section id="inicio" class="inicio">
+            <h2>Bienvenido a MLBB Collection</h2>
+
+            <p>
+                Explora información sobre héroes, skins y otros elementos
+                cosméticos de Mobile Legends. Organiza tus colecciones y
+                consulta propuestas de intercambio o regalo de manera simulada.
+            </p>
+
+            <a href="#skins">
+                <button>Explorar catálogo</button>
+            </a>
+            
+        </section>
+
+
+        <section id="heroes">
+            <h2>Héroes destacados</h2>
+        
+            <table>
+                <caption>Tabla 1: Lista de Héroes</caption>
+                
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Dificultad</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Akai</td>
+                        <td>Tanque/Soporte</td>
+                        <td>Media</td>
+                        <td>2016</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Layla</td>
+                        <td>Tirador</td>
+                        <td>Fácil</td>
+                        <td>2016</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Harley</td>
+                        <td>Jungla/Mago</td>
+                        <td>Media</td>
+                        <td>2017</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="skins">
+            <h2>Catálogo de skins</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Héroe</th>
+                        <th>Skin</th>
+                        <th>Rareza</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Akai</td>
+                        <td>Kung Fu Panda</td>
+                        <td>Especial</td>
+                        <td>899 Diamantes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Layla</td>
+                        <td>Modena Butterfly</td>
+                        <td>Collector</td>
+                        <td>1300 Diamantes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Harley</td>
+                        <td>Obsidian Blade</td>
+                        <td>Legend</td>
+                        <td>799 Diamantes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="intercambios">
+            <h2>Solicitudes de intercambio</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Ofrece</th>
+                        <th>Busca</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>A</td>
+                        <td>Skin de Layla</td>
+                        <td>Skin de Miya</td>
+                        <td>Intercambio</td>
+                    </tr>
+
+                    <tr>
+                        <td>B</td>
+                        <td>Sticker</td>
+                        <td>Logo</td>
+                        <td>Regalo</td>
+                    </tr>
+
+                    <tr>
+                        <td>C</td>
+                        <td>Skin de Alucard</td>
+                        <td>Skin de otro héroe</td>
+                        <td>Intercambio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="formulario">
+
+            <h2>Enviar propuesta</h2>
+
+            <form id="formularioPropuesta">
+
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario"
+                       placeholder="Escribe tu usuario">
+
+                <label for="ofrece">Elemento que ofreces:</label>
+                <input type="text" id="ofrece" name="ofrece"
+                       placeholder="Ejemplo: Skin de Layla">
+
+                <label for="busca">Elemento que buscas:</label>
+                <input type="text" id="busca" name="busca"
+                       placeholder="Ejemplo: Skin de Miya">
+
+                <label for="tipo">Tipo de propuesta:</label>
+
+                <select id="tipo" name="tipo">
+                    <option value="intercambio">Intercambio</option>
+                    <option value="regalo">Regalo</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea id="mensaje" name="mensaje"
+                          placeholder="Escribe tu propuesta"></textarea>
+
+                <button type="submit">Enviar propuesta</button>
+
+            </form>
+
+        </section>
+
+
+        <section id="galeria">
+
+            <h2>Galería</h2>
+
+            <div class="galeria">
+
+                <img src="img/akai.png" alt="Skin de Akai">
+                <img src="img/layla.jpg" alt="Skin de Layla">
+                <img src="img/harley.jpg" alt="Skin de Harley">
+
+            </div>
+
+            <div class="video">
+                <video controls>
+                    <source src="videos/panda.mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 MLBB Collection</p>
+        <p>Proyecto académico - HTML5 y CSS3</p>
+    </footer>
+
+    <script>
+        document.getElementById("formularioPropuesta").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            const usuario = document.getElementById("usuario").value;
+            const ofrece = document.getElementById("ofrece").value;
+            const busca = document.getElementById("busca").value;
+            const tipo = document.getElementById("tipo").value;
+            const mensaje = document.getElementById("mensaje").value;
+    
+            const propuesta = {
+                usuario: usuario,
+                ofrece: ofrece,
+                busca: busca,
+                tipo: tipo,
+                mensaje: mensaje
+            };
+    
+            localStorage.setItem("propuesta", JSON.stringify(propuesta));
+    
+            window.location.href = "resultado.html";
+        });
+    </script>
+
+</body>
+</html>

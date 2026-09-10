@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta enviada - MLBB Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>MLBB Collection</h1>
+            <p>Propuesta de intercambio</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="informacion.html">Información</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+
+        <section class="resultado">
+
+            <h2>Propuesta recibida</h2>
+
+            <p><strong>Usuario:</strong> <span id="mostrarUsuario"></span></p>
+
+            <p><strong>Ofrece:</strong> <span id="mostrarOfrece"></span></p>
+
+            <p><strong>Busca:</strong> <span id="mostrarBusca"></span></p>
+
+            <p><strong>Tipo de propuesta:</strong> <span id="mostrarTipo"></span></p>
+
+            <p><strong>Mensaje:</strong> <span id="mostrarMensaje"></span></p>
+
+            <br>
+
+            <a href="index.html">
+                <button>Volver al inicio</button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MLBB Collection</p>
+        <p>Proyecto académico - HTML5 y CSS3</p>
+    </footer>
+
+    <script>
+        const datos = JSON.parse(localStorage.getItem("propuesta"));
+
+        if (datos) {
+            document.getElementById("mostrarUsuario").textContent = datos.usuario;
+            document.getElementById("mostrarOfrece").textContent = datos.ofrece;
+            document.getElementById("mostrarBusca").textContent = datos.busca;
+            document.getElementById("mostrarTipo").textContent = datos.tipo;
+            document.getElementById("mostrarMensaje").textContent = datos.mensaje;
+        }
+    </script>
+
+</body>
+</html>
